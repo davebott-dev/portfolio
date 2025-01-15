@@ -19,7 +19,7 @@ const Root = () => {
                     </IconButton>
                 </div>
             </nav>
-            <Outlet/>
+            <main className = "scroll"><Outlet/></main>
             <footer>
           <div>Made with ❤️ by David Bottenberg</div>
           <a href="https://github.com/davebott-dev">
