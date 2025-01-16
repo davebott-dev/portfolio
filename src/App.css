@@ -91,11 +91,24 @@ footer {
   justify-items: center;
   height: 100vh;
 }
-#third>div:first-child>h2{
+#third>div:first-child>h2,
+#third>div:nth-child(4)>h2 {
   font-size: 3.5rem;
 }
-#third>div:first-child>p{
+#third>div:first-child>p,
+#third>div:nth-child(4)>p {
   font-size: 1.5rem;
+}
+#third>div:first-child{
+  display: flex;
+  flex-direction: column;
+  
+}
+#third>div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap: 26px;
 }
 #third>div:nth-child(2)>button{
   border-radius: 30px;
@@ -105,15 +118,14 @@ footer {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
-#third>div:nth-child(2)>button:hover {
-  border-color: #646cff;
+#third>div:nth-child(2)>div{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+code {
+  white-space: pre-wrap;
 }
 
 @media (prefers-color-scheme: light) {
