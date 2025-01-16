@@ -20,10 +20,20 @@ function Index() {
         </div>
       </section>
       <section id = "second">
-        This text should appear next
+        <div>About Me</div>
+        <div>Tech Skills</div>
+        <div>Experiences</div>
       </section>
       <section id = "third">
-        This text should appear Last
+        <div>
+          <h2>Front End</h2>
+          <p>Proficiently creating responsive and <br/>elegent front end designs</p>
+        </div>
+        <div>
+          <button>Click Me!</button>
+        </div>
+        <div>sample</div>
+        <div>Back End</div>
       </section>
     </MegaScroll>
   )

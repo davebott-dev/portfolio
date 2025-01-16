@@ -30,6 +30,7 @@ nav {
   align-items: center;
   font-size: 1.5rem;
   z-index: 1;
+  margin-top: 10px;
   padding: 0 2.5rem;
 }
 nav>div:nth-child(2) {
@@ -83,20 +84,33 @@ footer {
   padding-top: 15px;
   gap: 15px;
 }
-button {
-  border-radius: 8px;
+#third{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+#third>div:first-child>h2{
+  font-size: 3.5rem;
+}
+#third>div:first-child>p{
+  font-size: 1.5rem;
+}
+#third>div:nth-child(2)>button{
+  border-radius: 30px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 1rem 1.5rem;
+  font-size: 1.5em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+#third>div:nth-child(2)>button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
