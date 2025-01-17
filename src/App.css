@@ -99,16 +99,27 @@ footer {
 #third>div:nth-child(4)>p {
   font-size: 1.5rem;
 }
+#third>div:nth-child(4) {
+  justify-self: stretch;
+  align-self: flex-start;
+}
+#third>div:nth-child(3) {
+  align-self: flex-start;
+}
+#third>div:nth-child(3)>p {
+  font-size: larger;
+  font-weight: bold;
+}
 #third>div:first-child{
   display: flex;
   flex-direction: column;
-  
 }
 #third>div:nth-child(2){
   display: flex;
   flex-direction: column;
   align-items:flex-start;
   gap: 26px;
+  justify-self: stretch;
 }
 #third>div:nth-child(2)>button{
   border-radius: 30px;

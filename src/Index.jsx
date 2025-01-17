@@ -30,6 +30,29 @@ function Index() {
   const codeBlock2 = `<button style={{ background }} onClick={() => setBackground(randomColor)}>
             Click Me! </button>`;
 
+  const codeBlock3 = `
+  router.post(
+  "/chats/delete/:chatroomId",
+  passport.authenticate("jwt", { session: false }), 
+  async(req, res) => {
+  const { chatroomId } = req.params;
+  try{
+      const deleteChat = await prisma.chatroom.delete({
+    where: {
+      id: chatroomId,
+    },
+  });
+  res.json({
+      success:true,
+  })
+} catch(err) {
+  res.json({
+      success:false,
+      error:err,
+  })
+  }
+ })
+  `
   return (
     <MegaScroll>
       <section id="first">
@@ -68,13 +91,20 @@ function Index() {
           >
             Click Me!
           </button>
-          <div>
+          <pre style = {{background: "rgb(250, 250, 250);",direction: "ltr",}}>
             <code>const [background, setBackground] = useState(null);</code>
             <code>{codeBlock1}</code>
             <code>{codeBlock2}</code>
-          </div>
+          </pre>
         </div>
-        <div>sample</div>
+        <div>
+          <p><em>Sample</em></p>
+          <pre>
+            <code>
+              {codeBlock3}
+            </code>
+          </pre>
+        </div>
         <div>
           <h2>Back End</h2>
           <p>
@@ -88,3 +118,8 @@ function Index() {
 }
 
 export default Index;
+
+//maybe add moving background
+//add cool card effect hover for the about me
+//add a moving carousel of tech skills
+//add glassmorphism for experiences
