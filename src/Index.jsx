@@ -3,6 +3,10 @@ import MegaScroll from "react-mega-scroll";
 import GitHubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import CodeIcon from "@mui/icons-material/Code";
+import PersonIcon from "@mui/icons-material/Person";
+import VideocamIcon from "@mui/icons-material/Videocam";
 import "./App.css";
 
 function Index() {
@@ -52,7 +56,8 @@ function Index() {
   })
   }
  })
-  `
+  `;
+  //add typewriter animation
   return (
     <MegaScroll>
       <section id="first">
@@ -60,21 +65,167 @@ function Index() {
         <div>David Bottenberg</div>
         <div>Based in Morrisville, NC</div>
         <div>
-          <GitHubIcon sx={{ fontSize: 40 }} />
-          <LinkedInIcon sx={{ fontSize: 40 }} />
-          <InstagramIcon sx={{ fontSize: 40 }} />
+          <a href="https://github.com/davebott-dev">
+            <GitHubIcon sx={{ fontSize: 40, color: "#213547" }} />
+          </a>
+          <a href="https://www.linkedin.com/in/david-bottenberg-7ab9381a7/">
+            <LinkedInIcon sx={{ fontSize: 40, color: "#213547" }} />
+          </a>
+          <a href="https://www.instagram.com/david.bottenberg/?hl=en">
+            <InstagramIcon sx={{ fontSize: 40, color: "#213547" }} />
+          </a>
         </div>
       </section>
       <section id="second">
         <div>
           <h2>About Me</h2>
-          <div>The Creator</div>
-          <div>The Athlete</div>
-          <div>The Developer</div>
-          <div>The Person</div>
+          <div>
+            <div className="card">
+              <div className="slide slide1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-user-circle">
+                      <VideocamIcon sx={{ fontSize: 100 }} />
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div className="slide slide2">
+                <div className="content">
+                  <h3>The Creator</h3>
+                  <p>
+                    David enjoys creating content and has amassed almost 1
+                    million followers across all of his social media platforms
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="slide slide1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-user-circle">
+                      <SportsBasketballIcon sx={{ fontSize: 100 }} />
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div className="slide slide2">
+                <div className="content">
+                  <h3>The Athlete</h3>
+                  <p>
+                    David is a former Division 1 basketball player and Pro
+                    Athlete who still continues to enjoy the game of basketball
+                    today!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="slide slide1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-user-circle">
+                      <CodeIcon sx={{ fontSize: 100 }} />
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div className="slide slide2">
+                <div className="content">
+                  <h3>The Developer</h3>
+                  <p>
+                    David has taught himself how to code using{" "}
+                    <em>The Odin Project </em>
+                    while also pursuing a Master's Degree in Information Science{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="slide slide1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-user-circle">
+                      <PersonIcon sx={{ fontSize: 100 }} />
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div className="slide slide2">
+                <div className="content">
+                  <h3>The Person</h3>
+                  <p>
+                    David enjoys giving back to his community and helping
+                    others. His lifelong motto is{" "}
+                    <strong>"lift as you climb"</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>Tech Skills</div>
-        <div>Experiences</div>
+        <div className="scroll-container">
+          <h2>Tech Skills</h2>
+          <div className="carousel-primary">
+            <img src="./JavaScript.png" alt="javascript" height="90" />
+            <img src="./react.png" alt="react" height="90" />
+            <img src="./HTML5.png" alt="HTML" height="90" />
+            <img src="./CSS3.png" alt="CSS" height="90" />
+            <img src="./Express.png" alt="express" height="90" />
+            <img src="./Git.png" alt="git" height="90" />
+            <img src="./Material UI.png" alt="Material UI" height="90" />
+            <img src="./Node.js.png" alt="nodejs" height="90" />
+            <img src="./NPM.png" alt="NPM" height="90" />
+            <img src="./PostgresSQL.png" alt="postgresql" height="90" />
+            <img src="./prisma.png" alt="prisma" height="90" />
+            <img src="./Salesforce.png" alt="salesforce" height="90" />
+            <img src="./Vite.js.png" alt="vite" height="90" />
+            <img src="./vscode.png" alt="git" height="90" />
+          </div>
+          <div className="carousel-primary carousel-secondary">
+            <img src="./JavaScript.png" alt="javascript" height="90" />
+            <img src="./react.png" alt="react" height="90" />
+            <img src="./HTML5.png" alt="HTML" height="90" />
+            <img src="./CSS3.png" alt="CSS" height="90" />
+            <img src="./Express.png" alt="express" height="90" />
+            <img src="./Git.png" alt="git" height="90" />
+            <img src="./Material UI.png" alt="Material UI" height="90" />
+            <img src="./Node.js.png" alt="nodejs" height="90" />
+            <img src="./NPM.png" alt="NPM" height="90" />
+            <img src="./PostgresSQL.png" alt="postgresql" height="90" />
+            <img src="./prisma.png" alt="prisma" height="90" />
+            <img src="./Salesforce.png" alt="salesforce" height="90" />
+            <img src="./Vite.js.png" alt="vite" height="90" />
+            <img src="./vscode.png" alt="git" height="90" />
+          </div>
+        </div>
+        <div>
+          <h2>Experiences</h2>
+          <div>
+            <p>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Senectus eros
+              et nunc lorem rhoncus consectetur, maecenas cubilia. Rutrum nascetur
+              turpis scelerisque; ante posuere cursus cras. Orci eleifend
+              parturient, ultrices inceptos sit iaculis. Etiam auctor platea,
+              tempor platea habitant diam. Scelerisque vestibulum quis ad
+              scelerisque varius per torquent pulvinar. Fringilla mus ad
+              suspendisse mollis nisi integer proin praesent. Pretium pretium
+            </p>
+            <p>
+              luctus laoreet nibh tristique. Adipiscing condimentum non magnis
+              facilisi felis efficitur tristique rhoncus. Nisi ut id mus ridiculus
+              magna nam suscipit. Cursus posuere tellus metus ad per a potenti.
+              Erat odio tristique sem hendrerit auctor litora? Hac efficitur nisl
+              quis quam mattis proin quisque scelerisque. Vitae erat fringilla
+              eros sodales odio libero hendrerit potenti. Penatibus est rhoncus
+              elementum; litora mi integer porttitor? Tellus iaculis lacinia
+              ultricies augue egestas mattis placerat nec. Ut cursus ad posuere mi
+              fusce elit vehicula. Dignissim lacinia tortor semper vel lacinia ex
+              sed at.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="third">
         <div>
@@ -91,18 +242,19 @@ function Index() {
           >
             Click Me!
           </button>
-          <pre style = {{background: "rgb(250, 250, 250);",direction: "ltr",}}>
+          <pre style={{ background: "rgb(250, 250, 250);", direction: "ltr" }}>
             <code>const [background, setBackground] = useState(null);</code>
             <code>{codeBlock1}</code>
             <code>{codeBlock2}</code>
           </pre>
         </div>
+        <hr style={{ height: "2px", width: "100%" }} />
         <div>
-          <p><em>Sample</em></p>
+          <p>
+            <em>Sample</em>
+          </p>
           <pre>
-            <code>
-              {codeBlock3}
-            </code>
+            <code>{codeBlock3}</code>
           </pre>
         </div>
         <div>

@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Index from './Index.jsx';
 import Root from './routes/Root.jsx';
+import Contact from './routes/Contact.jsx';
+import Projects from './routes/Projects.jsx';
 
 const router= createBrowserRouter([
   {
@@ -12,6 +14,14 @@ const router= createBrowserRouter([
       {
         index: true,
         element: <Index/>,
+      },
+      {
+        path: '/contact',
+        element: <Contact/>,
+      },
+      {
+        path: '/projects',
+        element: <Projects/>,
       }
     ]
   }
