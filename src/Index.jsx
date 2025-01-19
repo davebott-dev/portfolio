@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MegaScroll from "react-mega-scroll";
+import {Tooltip} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -168,36 +169,36 @@ function Index() {
         <div className="scroll-container">
           <h2>Tech Skills</h2>
           <div className="carousel-primary">
-            <img src="./JavaScript.png" alt="javascript" height="90" />
-            <img src="./react.png" alt="react" height="90" />
-            <img src="./HTML5.png" alt="HTML" height="90" />
-            <img src="./CSS3.png" alt="CSS" height="90" />
-            <img src="./Express.png" alt="express" height="90" />
-            <img src="./Git.png" alt="git" height="90" />
-            <img src="./Material UI.png" alt="Material UI" height="90" />
-            <img src="./Node.js.png" alt="nodejs" height="90" />
-            <img src="./NPM.png" alt="NPM" height="90" />
-            <img src="./PostgresSQL.png" alt="postgresql" height="90" />
-            <img src="./prisma.png" alt="prisma" height="90" />
-            <img src="./Salesforce.png" alt="salesforce" height="90" />
-            <img src="./Vite.js.png" alt="vite" height="90" />
-            <img src="./vscode.png" alt="git" height="90" />
+            <Tooltip title="javascript"><img src="./JavaScript.png" alt="javascript" height="90" /></Tooltip>
+            <Tooltip title ="react"><img src="./react.png" alt="react" height="90" /></Tooltip>
+            <Tooltip title= "HTML"><img src="./HTML5.png" alt="HTML" height="90" /></Tooltip>
+            <Tooltip title="CSS"><img src="./CSS3.png" alt="CSS" height="90" /></Tooltip>
+            <Tooltip title = "express"><img src="./Express.png" alt="express" height="90" /></Tooltip>
+            <Tooltip title ="git"><img src="./Git.png" alt="git" height="90" /></Tooltip>
+            <Tooltip title = "Material UI"><img src="./Material UI.png" alt="Material UI" height="90" /></Tooltip>
+            <Tooltip title="node.js"><img src="./Node.js.png" alt="nodejs" height="90" /></Tooltip>
+            <Tooltip title = "NPM"><img src="./NPM.png" alt="NPM" height="90" /></Tooltip>
+            <Tooltip title ="PostgresSql"><img src="./PostgresSQL.png" alt="postgresql" height="90" /></Tooltip>
+            <Tooltip title = "prisma"><img src="./prisma.png" alt="prisma" height="90" /></Tooltip>
+            <Tooltip title="salesforce"><img src="./Salesforce.png" alt="salesforce" height="90" /></Tooltip>
+            <Tooltip title="vite.js"><img src="./Vite.js.png" alt="vite" height="90" /></Tooltip>
+            <Tooltip title="vscode"><img src="./vscode.png" alt="git" height="90" /></Tooltip>
           </div>
           <div className="carousel-primary carousel-secondary">
-            <img src="./JavaScript.png" alt="javascript" height="90" />
-            <img src="./react.png" alt="react" height="90" />
-            <img src="./HTML5.png" alt="HTML" height="90" />
-            <img src="./CSS3.png" alt="CSS" height="90" />
-            <img src="./Express.png" alt="express" height="90" />
-            <img src="./Git.png" alt="git" height="90" />
-            <img src="./Material UI.png" alt="Material UI" height="90" />
-            <img src="./Node.js.png" alt="nodejs" height="90" />
-            <img src="./NPM.png" alt="NPM" height="90" />
-            <img src="./PostgresSQL.png" alt="postgresql" height="90" />
-            <img src="./prisma.png" alt="prisma" height="90" />
-            <img src="./Salesforce.png" alt="salesforce" height="90" />
-            <img src="./Vite.js.png" alt="vite" height="90" />
-            <img src="./vscode.png" alt="git" height="90" />
+          <Tooltip title="javascript"><img src="./JavaScript.png" alt="javascript" height="90" /></Tooltip>
+            <Tooltip title ="react"><img src="./react.png" alt="react" height="90" /></Tooltip>
+            <Tooltip title= "HTML"><img src="./HTML5.png" alt="HTML" height="90" /></Tooltip>
+            <Tooltip title="CSS"><img src="./CSS3.png" alt="CSS" height="90" /></Tooltip>
+            <Tooltip title = "express"><img src="./Express.png" alt="express" height="90" /></Tooltip>
+            <Tooltip title ="git"><img src="./Git.png" alt="git" height="90" /></Tooltip>
+            <Tooltip title = "Material UI"><img src="./Material UI.png" alt="Material UI" height="90" /></Tooltip>
+            <Tooltip title="node.js"><img src="./Node.js.png" alt="nodejs" height="90" /></Tooltip>
+            <Tooltip title = "NPM"><img src="./NPM.png" alt="NPM" height="90" /></Tooltip>
+            <Tooltip title ="PostgresSql"><img src="./PostgresSQL.png" alt="postgresql" height="90" /></Tooltip>
+            <Tooltip title = "prisma"><img src="./prisma.png" alt="prisma" height="90" /></Tooltip>
+            <Tooltip title="salesforce"><img src="./Salesforce.png" alt="salesforce" height="90" /></Tooltip>
+            <Tooltip title="vite.js"><img src="./Vite.js.png" alt="vite" height="90" /></Tooltip>
+            <Tooltip title="vscode"><img src="./vscode.png" alt="git" height="90" /></Tooltip>
           </div>
         </div>
         <div>
