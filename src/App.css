@@ -282,23 +282,77 @@ a {
 }
 .project-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
   grid-template-rows: 100px repeat(3,500px);
   grid-auto-rows: 500px;
   grid-gap: 35px;
-  margin-bottom: 90px;
+  margin: 100px;
   justify-items: center;
 }
 .project-grid>h1{
   grid-column: 1/-1;
   grid-row: 1;
   text-align: center;
+  color: #3498DB;
 }
 .project-card{
-  border: 1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background: whitesmoke;
   width: 90%;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 15px;
+  gap: 10px;
+  transition: transform 0.05s ease-in-out;
 }
+.project-card>div{
+  text-align: left;
+}
+.project-card>div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+}
+.project-card>div:nth-child(2)>img {
+  height: auto;
+  width: 30%;
+
+}
+.project-card>div:nth-child(3){
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+}
+.project-card>div:nth-child(3)>button{
+  padding: 8px 16px;
+  background: #3498DB;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+.project-card>div:nth-child(3)>button:hover {
+  background: #1a425c;
+}
+.project-card:hover{
+  transform: translateY(-20px) scale(1.02);
+}
+
 @keyframes scroll-horizontal {
   from{
     left: 100%
@@ -312,9 +366,6 @@ a {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
   }
   button {
     background-color: #f9f9f9;
