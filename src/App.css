@@ -280,6 +280,25 @@ a {
 .scroll-container:hover>.carousel-primary:not(:hover) {
   animation-play-state: paused;
 }
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+  grid-template-rows: 100px repeat(3,500px);
+  grid-auto-rows: 500px;
+  grid-gap: 35px;
+  margin-bottom: 90px;
+  justify-items: center;
+}
+.project-grid>h1{
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+}
+.project-card{
+  border: 1px solid black;
+  width: 90%;
+  
+}
 @keyframes scroll-horizontal {
   from{
     left: 100%

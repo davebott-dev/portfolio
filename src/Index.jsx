@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MegaScroll from "react-mega-scroll";
-import {Tooltip} from "@mui/material";
+import { Tooltip } from "@mui/material";
+import { ReactTyped } from "react-typed";
 import GitHubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -63,7 +64,20 @@ function Index() {
     <MegaScroll>
       <section id="first">
         <div>Hello, I am</div>
-        <div>David Bottenberg</div>
+        <div>
+          <ReactTyped
+            strings={[
+              "David Bottenberg",
+              "A Student",
+              "An Aspiring Software Developer",
+              "A Tech Enthusiast",
+              "A Leader",
+            ]}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
+          />
+        </div>
         <div>Based in Morrisville, NC</div>
         <div>
           <a href="https://github.com/davebott-dev">
@@ -169,36 +183,92 @@ function Index() {
         <div className="scroll-container">
           <h2>Tech Skills</h2>
           <div className="carousel-primary">
-            <Tooltip title="javascript"><img src="./JavaScript.png" alt="javascript" height="90" /></Tooltip>
-            <Tooltip title ="react"><img src="./react.png" alt="react" height="90" /></Tooltip>
-            <Tooltip title= "HTML"><img src="./HTML5.png" alt="HTML" height="90" /></Tooltip>
-            <Tooltip title="CSS"><img src="./CSS3.png" alt="CSS" height="90" /></Tooltip>
-            <Tooltip title = "express"><img src="./Express.png" alt="express" height="90" /></Tooltip>
-            <Tooltip title ="git"><img src="./Git.png" alt="git" height="90" /></Tooltip>
-            <Tooltip title = "Material UI"><img src="./Material UI.png" alt="Material UI" height="90" /></Tooltip>
-            <Tooltip title="node.js"><img src="./Node.js.png" alt="nodejs" height="90" /></Tooltip>
-            <Tooltip title = "NPM"><img src="./NPM.png" alt="NPM" height="90" /></Tooltip>
-            <Tooltip title ="PostgresSql"><img src="./PostgresSQL.png" alt="postgresql" height="90" /></Tooltip>
-            <Tooltip title = "prisma"><img src="./prisma.png" alt="prisma" height="90" /></Tooltip>
-            <Tooltip title="salesforce"><img src="./Salesforce.png" alt="salesforce" height="90" /></Tooltip>
-            <Tooltip title="vite.js"><img src="./Vite.js.png" alt="vite" height="90" /></Tooltip>
-            <Tooltip title="vscode"><img src="./vscode.png" alt="git" height="90" /></Tooltip>
+            <Tooltip title="javascript">
+              <img src="./JavaScript.png" alt="javascript" height="90" />
+            </Tooltip>
+            <Tooltip title="react">
+              <img src="./react.png" alt="react" height="90" />
+            </Tooltip>
+            <Tooltip title="HTML">
+              <img src="./HTML5.png" alt="HTML" height="90" />
+            </Tooltip>
+            <Tooltip title="CSS">
+              <img src="./CSS3.png" alt="CSS" height="90" />
+            </Tooltip>
+            <Tooltip title="express">
+              <img src="./Express.png" alt="express" height="90" />
+            </Tooltip>
+            <Tooltip title="git">
+              <img src="./Git.png" alt="git" height="90" />
+            </Tooltip>
+            <Tooltip title="Material UI">
+              <img src="./Material UI.png" alt="Material UI" height="90" />
+            </Tooltip>
+            <Tooltip title="node.js">
+              <img src="./Node.js.png" alt="nodejs" height="90" />
+            </Tooltip>
+            <Tooltip title="NPM">
+              <img src="./NPM.png" alt="NPM" height="90" />
+            </Tooltip>
+            <Tooltip title="PostgresSql">
+              <img src="./PostgresSQL.png" alt="postgresql" height="90" />
+            </Tooltip>
+            <Tooltip title="prisma">
+              <img src="./prisma.png" alt="prisma" height="90" />
+            </Tooltip>
+            <Tooltip title="salesforce">
+              <img src="./Salesforce.png" alt="salesforce" height="90" />
+            </Tooltip>
+            <Tooltip title="vite.js">
+              <img src="./Vite.js.png" alt="vite" height="90" />
+            </Tooltip>
+            <Tooltip title="vscode">
+              <img src="./vscode.png" alt="git" height="90" />
+            </Tooltip>
           </div>
           <div className="carousel-primary carousel-secondary">
-          <Tooltip title="javascript"><img src="./JavaScript.png" alt="javascript" height="90" /></Tooltip>
-            <Tooltip title ="react"><img src="./react.png" alt="react" height="90" /></Tooltip>
-            <Tooltip title= "HTML"><img src="./HTML5.png" alt="HTML" height="90" /></Tooltip>
-            <Tooltip title="CSS"><img src="./CSS3.png" alt="CSS" height="90" /></Tooltip>
-            <Tooltip title = "express"><img src="./Express.png" alt="express" height="90" /></Tooltip>
-            <Tooltip title ="git"><img src="./Git.png" alt="git" height="90" /></Tooltip>
-            <Tooltip title = "Material UI"><img src="./Material UI.png" alt="Material UI" height="90" /></Tooltip>
-            <Tooltip title="node.js"><img src="./Node.js.png" alt="nodejs" height="90" /></Tooltip>
-            <Tooltip title = "NPM"><img src="./NPM.png" alt="NPM" height="90" /></Tooltip>
-            <Tooltip title ="PostgresSql"><img src="./PostgresSQL.png" alt="postgresql" height="90" /></Tooltip>
-            <Tooltip title = "prisma"><img src="./prisma.png" alt="prisma" height="90" /></Tooltip>
-            <Tooltip title="salesforce"><img src="./Salesforce.png" alt="salesforce" height="90" /></Tooltip>
-            <Tooltip title="vite.js"><img src="./Vite.js.png" alt="vite" height="90" /></Tooltip>
-            <Tooltip title="vscode"><img src="./vscode.png" alt="git" height="90" /></Tooltip>
+            <Tooltip title="javascript">
+              <img src="./JavaScript.png" alt="javascript" height="90" />
+            </Tooltip>
+            <Tooltip title="react">
+              <img src="./react.png" alt="react" height="90" />
+            </Tooltip>
+            <Tooltip title="HTML">
+              <img src="./HTML5.png" alt="HTML" height="90" />
+            </Tooltip>
+            <Tooltip title="CSS">
+              <img src="./CSS3.png" alt="CSS" height="90" />
+            </Tooltip>
+            <Tooltip title="express">
+              <img src="./Express.png" alt="express" height="90" />
+            </Tooltip>
+            <Tooltip title="git">
+              <img src="./Git.png" alt="git" height="90" />
+            </Tooltip>
+            <Tooltip title="Material UI">
+              <img src="./Material UI.png" alt="Material UI" height="90" />
+            </Tooltip>
+            <Tooltip title="node.js">
+              <img src="./Node.js.png" alt="nodejs" height="90" />
+            </Tooltip>
+            <Tooltip title="NPM">
+              <img src="./NPM.png" alt="NPM" height="90" />
+            </Tooltip>
+            <Tooltip title="PostgresSql">
+              <img src="./PostgresSQL.png" alt="postgresql" height="90" />
+            </Tooltip>
+            <Tooltip title="prisma">
+              <img src="./prisma.png" alt="prisma" height="90" />
+            </Tooltip>
+            <Tooltip title="salesforce">
+              <img src="./Salesforce.png" alt="salesforce" height="90" />
+            </Tooltip>
+            <Tooltip title="vite.js">
+              <img src="./Vite.js.png" alt="vite" height="90" />
+            </Tooltip>
+            <Tooltip title="vscode">
+              <img src="./vscode.png" alt="git" height="90" />
+            </Tooltip>
           </div>
         </div>
         <div>
@@ -206,24 +276,24 @@ function Index() {
           <div>
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Senectus eros
-              et nunc lorem rhoncus consectetur, maecenas cubilia. Rutrum nascetur
-              turpis scelerisque; ante posuere cursus cras. Orci eleifend
-              parturient, ultrices inceptos sit iaculis. Etiam auctor platea,
-              tempor platea habitant diam. Scelerisque vestibulum quis ad
-              scelerisque varius per torquent pulvinar. Fringilla mus ad
+              et nunc lorem rhoncus consectetur, maecenas cubilia. Rutrum
+              nascetur turpis scelerisque; ante posuere cursus cras. Orci
+              eleifend parturient, ultrices inceptos sit iaculis. Etiam auctor
+              platea, tempor platea habitant diam. Scelerisque vestibulum quis
+              ad scelerisque varius per torquent pulvinar. Fringilla mus ad
               suspendisse mollis nisi integer proin praesent. Pretium pretium
             </p>
             <p>
               luctus laoreet nibh tristique. Adipiscing condimentum non magnis
-              facilisi felis efficitur tristique rhoncus. Nisi ut id mus ridiculus
-              magna nam suscipit. Cursus posuere tellus metus ad per a potenti.
-              Erat odio tristique sem hendrerit auctor litora? Hac efficitur nisl
-              quis quam mattis proin quisque scelerisque. Vitae erat fringilla
-              eros sodales odio libero hendrerit potenti. Penatibus est rhoncus
-              elementum; litora mi integer porttitor? Tellus iaculis lacinia
-              ultricies augue egestas mattis placerat nec. Ut cursus ad posuere mi
-              fusce elit vehicula. Dignissim lacinia tortor semper vel lacinia ex
-              sed at.
+              facilisi felis efficitur tristique rhoncus. Nisi ut id mus
+              ridiculus magna nam suscipit. Cursus posuere tellus metus ad per a
+              potenti. Erat odio tristique sem hendrerit auctor litora? Hac
+              efficitur nisl quis quam mattis proin quisque scelerisque. Vitae
+              erat fringilla eros sodales odio libero hendrerit potenti.
+              Penatibus est rhoncus elementum; litora mi integer porttitor?
+              Tellus iaculis lacinia ultricies augue egestas mattis placerat
+              nec. Ut cursus ad posuere mi fusce elit vehicula. Dignissim
+              lacinia tortor semper vel lacinia ex sed at.
             </p>
           </div>
         </div>
@@ -272,7 +342,6 @@ function Index() {
 
 export default Index;
 
-//maybe add moving background
-//add cool card effect hover for the about me
-//add a moving carousel of tech skills
 //add glassmorphism for experiences
+//make light/dark mode functional
+//add coloring for the code blocks
