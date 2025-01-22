@@ -59,7 +59,6 @@ function Index() {
   }
  })
   `;
-  //add typewriter animation
   return (
     <MegaScroll>
       <section id="first">
