@@ -58,7 +58,7 @@ function Projects() {
             <button>Code</button>
           </a>
 
-          <button>Demo</button>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -103,12 +103,14 @@ function Projects() {
       <div className="project-card">
         <div>
           <h2>Fake Shopping Application</h2>
-          <p>Project 1 Description</p>
+          <p>This is the frontend design I created for a sample e-commerce website.
+            This project was built using React. 
+          </p>
         </div>
-        <div> The image will go here</div>
+        <div>  <img src="./project6.png" alt="project 6 image" /></div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href="https://github.com/davebott-dev/Shopping_Cart"><button>Code</button></a>
+          <a href="https://fruitology.netlify.app/"><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">

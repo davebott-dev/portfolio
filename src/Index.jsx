@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from "react-router-dom";
 import MegaScroll from "react-mega-scroll";
 import { Tooltip } from "@mui/material";
 import { ReactTyped } from "react-typed";
@@ -94,89 +95,97 @@ function Index() {
         <div>
           <h2>About Me</h2>
           <div>
-            <div className="card">
-              <div className="slide slide1">
-                <div className="content">
-                  <div className="icon">
-                    <i className="fa fa-user-circle">
-                      <VideocamIcon sx={{ fontSize: 100 }} />
-                    </i>
+            <Link to="/about-me">
+              <div className="card">
+                <div className="slide slide1">
+                  <div className="content">
+                    <div className="icon">
+                      <i className="fa fa-user-circle">
+                        <VideocamIcon sx={{ fontSize: 100 }} />
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div className="slide slide2">
+                  <div className="content">
+                    <h3>The Creator</h3>
+                    <p>
+                      David enjoys creating content and has amassed almost 1
+                      million followers across all of his social media platforms
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="slide slide2">
-                <div className="content">
-                  <h3>The Creator</h3>
-                  <p>
-                    David enjoys creating content and has amassed almost 1
-                    million followers across all of his social media platforms
-                  </p>
+            </Link>
+            <Link to="about-me">
+              <div className="card">
+                <div className="slide slide1">
+                  <div className="content">
+                    <div className="icon">
+                      <i className="fa fa-user-circle">
+                        <SportsBasketballIcon sx={{ fontSize: 100 }} />
+                      </i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="slide slide1">
-                <div className="content">
-                  <div className="icon">
-                    <i className="fa fa-user-circle">
-                      <SportsBasketballIcon sx={{ fontSize: 100 }} />
-                    </i>
+                <div className="slide slide2">
+                  <div className="content">
+                    <h3>The Athlete</h3>
+                    <p>
+                      David is a former Division 1 basketball player and Pro
+                      Athlete who still continues to enjoy the game of basketball
+                      today!
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="slide slide2">
-                <div className="content">
-                  <h3>The Athlete</h3>
-                  <p>
-                    David is a former Division 1 basketball player and Pro
-                    Athlete who still continues to enjoy the game of basketball
-                    today!
-                  </p>
+            </Link>
+            <Link to ="about-me"> 
+              <div className="card">
+                <div className="slide slide1">
+                  <div className="content">
+                    <div className="icon">
+                      <i className="fa fa-user-circle">
+                        <CodeIcon sx={{ fontSize: 100 }} />
+                      </i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="slide slide1">
-                <div className="content">
-                  <div className="icon">
-                    <i className="fa fa-user-circle">
-                      <CodeIcon sx={{ fontSize: 100 }} />
-                    </i>
+                <div className="slide slide2">
+                  <div className="content">
+                    <h3>The Developer</h3>
+                    <p>
+                      David has taught himself how to code using{" "}
+                      <em>The Odin Project </em>
+                      while also pursuing a Master's Degree in Information Science{" "}
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="slide slide2">
-                <div className="content">
-                  <h3>The Developer</h3>
-                  <p>
-                    David has taught himself how to code using{" "}
-                    <em>The Odin Project </em>
-                    while also pursuing a Master's Degree in Information Science{" "}
-                  </p>
+            </Link>
+            <Link to ="about-me">
+              <div className="card">
+                <div className="slide slide1">
+                  <div className="content">
+                    <div className="icon">
+                      <i className="fa fa-user-circle">
+                        <PersonIcon sx={{ fontSize: 100 }} />
+                      </i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="slide slide1">
-                <div className="content">
-                  <div className="icon">
-                    <i className="fa fa-user-circle">
-                      <PersonIcon sx={{ fontSize: 100 }} />
-                    </i>
+                <div className="slide slide2">
+                  <div className="content">
+                    <h3>The Person</h3>
+                    <p>
+                      David enjoys giving back to his community and helping
+                      others. His lifelong motto is{" "}
+                      <strong>"lift as you climb"</strong>
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="slide slide2">
-                <div className="content">
-                  <h3>The Person</h3>
-                  <p>
-                    David enjoys giving back to his community and helping
-                    others. His lifelong motto is{" "}
-                    <strong>"lift as you climb"</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="scroll-container">

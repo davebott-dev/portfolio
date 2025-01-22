@@ -5,6 +5,7 @@ import Index from './Index.jsx';
 import Root from './routes/Root.jsx';
 import Contact from './routes/Contact.jsx';
 import Projects from './routes/Projects.jsx';
+import About from './routes/About.jsx';
 
 const router= createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router= createBrowserRouter([
       {
         path: '/projects',
         element: <Projects/>,
+      },
+      {
+        path: '/about-me',
+        element:<About/>,
       }
     ]
   }
