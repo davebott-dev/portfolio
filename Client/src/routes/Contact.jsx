@@ -1,4 +1,5 @@
 function Contact() {
+  //set up a handle submit form that sends the data to the backend
   return (
     <div>
       <h1>Contact Me</h1>
