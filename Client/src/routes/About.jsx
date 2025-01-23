@@ -1,10 +1,12 @@
+//add cool apis and maybe make a scrollable horizontal timeline 
+//add several pictures
 function About() {
   return (
     <div>
       <h1>More About Me...</h1>
 
       <section >
-        <h2>The Creator</h2>
+        <h2>The Creator</h2> 
         <p>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Fames maecenas
           elit hac malesuada per suscipit fusce primis dictum. Luctus efficitur

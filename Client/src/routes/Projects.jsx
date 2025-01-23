@@ -58,7 +58,9 @@ function Projects() {
             <button>Code</button>
           </a>
 
-          <a href=""><button>Demo</button></a>
+          <a href="">
+            <button>Demo</button>
+          </a>
         </div>
       </div>
       <div className="project-card">
@@ -103,20 +105,32 @@ function Projects() {
       <div className="project-card">
         <div>
           <h2>Fake Shopping Application</h2>
-          <p>This is the frontend design I created for a sample e-commerce website.
-            This project was built using React. 
+          <p>
+            This is the frontend design I created for a sample e-commerce
+            website. This project was built using React.
           </p>
         </div>
-        <div>  <img src="./project6.png" alt="project 6 image" /></div>
         <div>
-          <a href="https://github.com/davebott-dev/Shopping_Cart"><button>Code</button></a>
-          <a href="https://fruitology.netlify.app/"><button>Demo</button></a>
+          {" "}
+          <img src="./project6.png" alt="project 6 image" />
+        </div>
+        <div>
+          <a href="https://github.com/davebott-dev/Shopping_Cart">
+            <button>Code</button>
+          </a>
+          <a href="https://fruitology.netlify.app/">
+            <button>Demo</button>
+          </a>
         </div>
       </div>
       <div className="project-card">
         <div>
           <h2>Mini-Messageboard</h2>
-          <p>Project 1 Description</p>
+          <p>
+            I practiced creating a project using the M-V-C pattern with node,
+            express, and postgresql. This application lets the user send and
+            display messages on a messageboard.
+          </p>
         </div>
         <div> The image will go here</div>
         <div>
@@ -127,7 +141,11 @@ function Projects() {
       <div className="project-card">
         <div>
           <h2>Inventory Application</h2>
-          <p>Project 1 Description</p>
+          <p>
+            This project used Node, Express, and PostgreSql to create an
+            inventory application that allows the user to add, delete, or update
+            the inventory.
+          </p>
         </div>
         <div> The image will go here</div>
         <div>
