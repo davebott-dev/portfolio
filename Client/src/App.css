@@ -351,6 +351,28 @@ button a {
 .project-card:hover{
   transform: translateY(-20px) scale(1.02);
 }
+#contact-form {
+  display: flex;
+  height: inherit;
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+}
+#contact-form>div{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+}
+#contact-form>div>form{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+textarea {
+  height: 250px;
+}
 
 @keyframes scroll-horizontal {
   from{
