@@ -3,22 +3,32 @@ function Contact() {
   return (
     <div id="contact-form">
       <div>
-      <h1>Contact Me</h1>
+        <h1>Contact Me</h1>
         <form>
-          <label htmlFor="name">Name: </label>
-          <input type="text" name="name" id="name" />
-          <label htmlFor="email">email: </label>
-          <input type="email" name="email" id="email" />
-          <label htmlFor="message">Message: </label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="thoughts..."
-          ></textarea>
+          <div>
+            <label htmlFor="name">Name: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label htmlFor="email">Email: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div>
+            <label htmlFor="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="thoughts..."
+            ></textarea>
+          </div>
           <button>Submit</button>
         </form>
-        </div>
-        <a href="/Resume.pdf" download="resume"><button type="button">Resume</button></a>
+      </div>
+      <div>
+        <a href="/resume.pdf" download="David Bottenberg's Resume">
+          <img src="resume.jpg" alt="first page of my resume" />
+        </a>
+      </div>
     </div>
   );
 }
