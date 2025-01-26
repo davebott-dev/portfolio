@@ -54,7 +54,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #213547;
   gap: 20px;
 }
 #first {
@@ -171,8 +170,6 @@ code {
   left: 0;
   width: 100%;
   height: 100%;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
   background: #213547;
 }
 #second .card .icon .fa {
@@ -210,8 +207,7 @@ code {
   transition: 0.8s;
   transform: translateY(-100px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background: white;
 }
 #second .card:hover .slide.slide2 {
   transform: translateY(0);
@@ -241,8 +237,8 @@ code {
   color: #414141;
 }
 a {
-  color: #213547;
   text-decoration: none;
+  color: inherit;
 }
 .scroll-container{
   margin-top: 15px;
@@ -398,15 +394,32 @@ form button {
 form button:hover{
   transform: scale(1.1);
 }
-#contact-form>div:nth-child(2) img {
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#contact-form>div:nth-child(2)>a{
+  align-self: center;
 }
-/*On hover of the resume image display the text click to download
-my resume and black out the image */
+#contact-form>div:nth-child(2) button{
+  padding: 20px;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #213547;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bold;
+}
+.arrow{
+  animation: bounce 1s infinite alternate;
+  align-self: center;
+}
 
+@keyframes bounce {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(20px);
+  }
+}
 @keyframes scroll-horizontal {
   from{
     left: 100%
