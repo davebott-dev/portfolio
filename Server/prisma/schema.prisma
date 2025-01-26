@@ -25,5 +25,3 @@ model Mail {
   message   String
   createdAt DateTime @default(now())
 }
-
-//integrate nodemailer with prisma to send and save users email

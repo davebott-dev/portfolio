@@ -17,6 +17,43 @@ app.use(cors({
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-//integrate nodemailer and a prisma query to save and send the email
+const transporter = nodemailer.createTransport({
+    service:"gmail",
+    auth:{
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
+    }
+});
+
+app.post("/contact", async(req,res)=> {
+    const {name,email,message} = req.body;
+
+    try{
+        const sentMessage = await prisma.mail.create({
+            data: {
+                name,
+                email,
+                message,
+            },
+        });
+
+        await transporter.sendMail({
+            from: email,
+            to: process.env.EMAIL_USER,
+            subject: `Portfolio Contact Message: ${name}`,
+            text: `You have received a message from ${name}, ${email}: \n\n ${message}`,
+        });
+        res.status(200).json({
+            success:true,
+            message: "Message sent successfully"
+        });
+    } catch(err) {
+        console.error("Error", err);
+        res.status(500).json({
+            success:false,
+            error: "Failed to send message"
+        })
+    }
+})
 
 app.listen(port,()=>console.log(`The Server is Running on Port ${port}`));
