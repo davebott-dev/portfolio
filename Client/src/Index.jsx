@@ -81,13 +81,13 @@ function Index() {
         <div>Based in Morrisville, NC</div>
         <div>
           <a href="https://github.com/davebott-dev">
-            <GitHubIcon sx={{ fontSize: 40, color: "#213547" }} />
+            <GitHubIcon sx={{ fontSize: 40, color: "inherit" }} />
           </a>
           <a href="https://www.linkedin.com/in/david-bottenberg-7ab9381a7/">
-            <LinkedInIcon sx={{ fontSize: 40, color: "#213547" }} />
+            <LinkedInIcon sx={{ fontSize: 40, color: "inherit" }} />
           </a>
           <a href="https://www.instagram.com/david.bottenberg/?hl=en">
-            <InstagramIcon sx={{ fontSize: 40, color: "#213547" }} />
+            <InstagramIcon sx={{ fontSize: 40, color: "inherit" }} />
           </a>
         </div>
       </section>
