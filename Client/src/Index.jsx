@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import MegaScroll from "react-mega-scroll";
 import { Tooltip } from "@mui/material";
 import { ReactTyped } from "react-typed";
@@ -140,14 +140,14 @@ app.post("/contact", async(req, res)=> {
                     <h3>The Athlete</h3>
                     <p>
                       David is a former Division 1 basketball player and Pro
-                      Athlete who still continues to enjoy the game of basketball
-                      today!
+                      Athlete who still continues to enjoy the game of
+                      basketball today!
                     </p>
                   </div>
                 </div>
               </div>
             </Link>
-            <Link to ="about-me"> 
+            <Link to="about-me">
               <div className="card">
                 <div className="slide slide1">
                   <div className="content">
@@ -164,13 +164,14 @@ app.post("/contact", async(req, res)=> {
                     <p>
                       David has taught himself how to code using{" "}
                       <em>The Odin Project </em>
-                      while also pursuing a Master's Degree in Information Science{" "}
+                      while also pursuing a Master's Degree in Information
+                      Science{" "}
                     </p>
                   </div>
                 </div>
               </div>
             </Link>
-            <Link to ="about-me">
+            <Link to="about-me">
               <div className="card">
                 <div className="slide slide1">
                   <div className="content">
@@ -290,25 +291,18 @@ app.post("/contact", async(req, res)=> {
           <h2>Experiences</h2>
           <div>
             <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Senectus eros
-              et nunc lorem rhoncus consectetur, maecenas cubilia. Rutrum
-              nascetur turpis scelerisque; ante posuere cursus cras. Orci
-              eleifend parturient, ultrices inceptos sit iaculis. Etiam auctor
-              platea, tempor platea habitant diam. Scelerisque vestibulum quis
-              ad scelerisque varius per torquent pulvinar. Fringilla mus ad
-              suspendisse mollis nisi integer proin praesent. Pretium pretium
+              I’m a Full-Stack Web Developer Software Engineer with a focus in
+              Front End work driven by a passion for blending technology and
+              creativity to craft impactful user experiences. My diverse
+              background in creative fields along with business roles in
+              marketing, sales, and customer service, has honed my adaptability
+              and communication skills. As a developer, I now channel this
+              unique skill set to design intuitive, user-focused products that
+              enhance both user satisfaction and business growth.
             </p>
             <p>
-              luctus laoreet nibh tristique. Adipiscing condimentum non magnis
-              facilisi felis efficitur tristique rhoncus. Nisi ut id mus
-              ridiculus magna nam suscipit. Cursus posuere tellus metus ad per a
-              potenti. Erat odio tristique sem hendrerit auctor litora? Hac
-              efficitur nisl quis quam mattis proin quisque scelerisque. Vitae
-              erat fringilla eros sodales odio libero hendrerit potenti.
-              Penatibus est rhoncus elementum; litora mi integer porttitor?
-              Tellus iaculis lacinia ultricies augue egestas mattis placerat
-              nec. Ut cursus ad posuere mi fusce elit vehicula. Dignissim
-              lacinia tortor semper vel lacinia ex sed at.
+              add something else... move section a little higher (not so close
+              to bottom of page)
             </p>
           </div>
         </div>
@@ -357,6 +351,11 @@ app.post("/contact", async(req, res)=> {
 
 export default Index;
 
-//add modal for experiences
- 
+//change the experiences section -- think of better idea
+// change the resume button?
+//add text for experineces and more about me page
+//add timelines and different ui features on more about me page
 //add coloring for the code blocks
+//deploy/update projects and add it to the demo page
+//deploy portfolio
+

@@ -103,8 +103,11 @@ footer {
   text-align: center;
 }
 #second> div:nth-child(3) {
-  padding: 15px;
-  width: 95%;
+  padding: 75px;
+  width: 100%;
+}
+#second> div:nth-child(3) h2 {
+  text-align: center;
 }
 #third {
   display: grid;
