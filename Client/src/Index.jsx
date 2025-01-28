@@ -38,27 +38,34 @@ function Index() {
             Click Me! </button>`;
 
   const codeBlock3 = `
-  router.post(
-  "/chats/delete/:chatroomId",
-  passport.authenticate("jwt", { session: false }), 
-  async(req, res) => {
-  const { chatroomId } = req.params;
-  try{
-      const deleteChat = await prisma.chatroom.delete({
-    where: {
-      id: chatroomId,
-    },
-  });
-  res.json({
-      success:true,
-  })
-} catch(err) {
-  res.json({
-      success:false,
-      error:err,
-  })
-  }
- })
+app.post("/contact", async(req, res)=> {
+    const {name,email,message} = req.body;
+    try{
+        const sentMessage = await prisma.mail.create({
+            data: {
+                name,
+                email,
+                message,
+            },
+        });
+        await transporter.sendMail({
+            from: email,
+            to: process.env.EMAIL_USER,
+            subject: 'ortfolio Contact Message: name',
+            text: 'You have received a message from name, email: message',
+        });
+        res.status(200).json({
+            success:true,
+            message: "Message sent successfully"
+        });
+    } catch(err) {
+        console.error("Error", err);
+        res.status(500).json({
+            success:false,
+            error: "Failed to send message"
+        })
+    }
+});
   `;
   return (
     <MegaScroll>
@@ -350,6 +357,6 @@ function Index() {
 
 export default Index;
 
-//add glassmorphism for experiences
-//make light/dark mode functional
+//add modal for experiences
+ 
 //add coloring for the code blocks
