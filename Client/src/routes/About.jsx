@@ -1,12 +1,13 @@
-//add cool apis and maybe make a scrollable horizontal timeline 
-//add several pictures
+//fetch from social media apis to display my live follower count
+//put one exapmle tiktok (embed)
+
 function About() {
   return (
-    <div>
+    <div className="about-container">
       <h1>More About Me...</h1>
 
-      <section >
-        <h2>The Creator</h2> 
+      <section>
+        <h2>The Creator</h2>
         <p>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Fames maecenas
           elit hac malesuada per suscipit fusce primis dictum. Luctus efficitur
@@ -51,7 +52,7 @@ function About() {
           ex; cursus fusce vestibulum facilisis. Convallis in viverra
           scelerisque, blandit senectus iaculis lacinia. Adipiscing lorem
           blandit velit adipiscing maximus malesuada tristique venenatis lacus.
-        </p>
+        </p>       
       </section>
       <section>
         <h2>The Athlete</h2>

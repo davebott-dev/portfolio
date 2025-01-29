@@ -134,8 +134,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -149,8 +149,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -160,8 +160,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -171,8 +171,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -182,8 +182,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -193,8 +193,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
@@ -204,8 +204,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <button>Code</button>
-          <button>Demo</button>
+          <a href=""><button>Code</button></a>
+          <a href=""><button>Demo</button></a>
         </div>
       </div>
     </div>
