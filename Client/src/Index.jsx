@@ -102,7 +102,6 @@ app.post("/contact", async(req, res)=> {
         <div>
           <h2>About Me</h2>
           <div>
-            <Link to="/about-me">
               <div className="card">
                 <div className="slide slide1">
                   <div className="content">
@@ -123,8 +122,6 @@ app.post("/contact", async(req, res)=> {
                   </div>
                 </div>
               </div>
-            </Link>
-            <Link to="about-me">
               <div className="card">
                 <div className="slide slide1">
                   <div className="content">
@@ -146,8 +143,6 @@ app.post("/contact", async(req, res)=> {
                   </div>
                 </div>
               </div>
-            </Link>
-            <Link to="about-me">
               <div className="card">
                 <div className="slide slide1">
                   <div className="content">
@@ -170,8 +165,6 @@ app.post("/contact", async(req, res)=> {
                   </div>
                 </div>
               </div>
-            </Link>
-            <Link to="about-me">
               <div className="card">
                 <div className="slide slide1">
                   <div className="content">
@@ -193,7 +186,6 @@ app.post("/contact", async(req, res)=> {
                   </div>
                 </div>
               </div>
-            </Link>
           </div>
         </div>
         <div className="scroll-container">
@@ -351,10 +343,8 @@ app.post("/contact", async(req, res)=> {
 
 export default Index;
 
-//change the experiences section -- think of better idea
 // change the resume button?
 //add text for experineces and more about me page
-//add timelines and different ui features on more about me page
 //add coloring for the code blocks
 //deploy/update projects and add it to the demo page
 //deploy portfolio
