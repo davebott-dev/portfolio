@@ -31,6 +31,7 @@ function Projects() {
           <p>
             A simple game of battleship where the user can play against another
             player or a computer. This game is coded entirely with Javascript.
+            Recently refactored this project with react.
           </p>
         </div>
         <div> The image will go here</div>
@@ -39,7 +40,7 @@ function Projects() {
             <button>Code</button>
           </a>
 
-          <a href="">
+          <a href="https://navalwarfare-battleship.netlify.app/">
             <button>Demo</button>
           </a>
         </div>

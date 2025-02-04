@@ -344,7 +344,7 @@ app.post("/contact", async(req, res)=> {
 export default Index;
 
 // change the resume button?
-//add text for experineces and more about me page
+//add text for experineces page
 //add coloring for the code blocks
 //deploy/update projects and add it to the demo page
 //deploy portfolio
