@@ -50,7 +50,8 @@ function Projects() {
           <h2>Tic-Tac-Toe</h2>
           <p>
             A simple game of Tic-Tac-Toe coded using Javascript. This was the
-            first major learning project in The Odin Project.
+            first major learning project in The Odin Project. I recently refactored
+            this project into react.
           </p>
         </div>
         <div> The image will go here</div>
@@ -59,7 +60,7 @@ function Projects() {
             <button>Code</button>
           </a>
 
-          <a href="">
+          <a href="https://game-tictactoe-db.netlify.app/">
             <button>Demo</button>
           </a>
         </div>
