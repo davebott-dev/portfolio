@@ -20,7 +20,7 @@ function Projects() {
             <button>Code</button>
           </a>
 
-          <a href="">
+          <a href="https://react-simple-calculator-app.netlify.app/">
             <button>Demo</button>
           </a>
         </div>
@@ -130,14 +130,15 @@ function Projects() {
           <h2>Mini-Messageboard</h2>
           <p>
             I practiced creating a project using the M-V-C pattern with node,
-            express, and postgresql. This application lets the user send and
+            express, and postgresql. The view engine is EJS and the app was
+            deployed using render. This application lets the user send and
             display messages on a messageboard.
           </p>
         </div>
         <div> The image will go here</div>
         <div>
-          <a href=""><button>Code</button></a>
-          <a href=""><button>Demo</button></a>
+          <a href="https://github.com/davebott-dev/MiniMessageBoard"><button>Code</button></a>
+          <a href="https://minimessageboard-bz9c.onrender.com/"><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
