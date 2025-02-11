@@ -34,7 +34,7 @@ function Projects() {
             Recently refactored this project with react.
           </p>
         </div>
-        <div> The image will go here</div>
+        <div> <img src="./battleship.png" alt="" /></div>
         <div>
           <a href="https://github.com/davebott-dev/battleship">
             <button>Code</button>
@@ -54,7 +54,7 @@ function Projects() {
             this project into react.
           </p>
         </div>
-        <div> The image will go here</div>
+        <div> <img src="./tic.png" alt="" /></div>
         <div>
           <a href="https://github.com/davebott-dev/TicTacToe">
             <button>Code</button>
@@ -74,7 +74,7 @@ function Projects() {
             see how many in a row you can get.
           </p>
         </div>
-        <div> The image will go here</div>
+        <div> <img src="./memory.png" alt="" /></div>
         <div>
           <a href="https://github.com/davebott-dev/pokemon-memory-game">
             <button>Code</button>
@@ -152,8 +152,8 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <a href=""><button>Code</button></a>
-          <a href=""><button>Demo</button></a>
+          <a href="https://github.com/davebott-dev/InventoryApp"><button>Code</button></a>
+          <a href="https://inventory-app-liard-five.vercel.app/"><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
