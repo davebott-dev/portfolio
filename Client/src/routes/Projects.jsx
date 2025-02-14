@@ -169,23 +169,23 @@ function Projects() {
       </div>
       <div className="project-card">
         <div>
-          <h2>Sample Authentication App (using jwt)</h2>
+          <h2>Where's Waldo App</h2>
           <p>Project 1 Description</p>
         </div>
         <div> The image will go here</div>
         <div>
-          <a href=""><button>Code</button></a>
+          <a href="https://github.com/davebott-dev/photo_tagging_app"><button>Code</button></a>
           <a href=""><button>Demo</button></a>
         </div>
       </div>
       <div className="project-card">
         <div>
-          <h2>Sample Authenication App (using passport-local)</h2>
-          <p>Sample Authenication App (using passport-local) </p>
+          <h2>Sample Authenication App (using jwt)</h2>
+          <p>Sample Authenication App (using jwt) </p>
         </div>
         <div> The image will go here</div>
         <div>
-          <a href=""><button>Code</button></a>
+          <a href="https://github.com/davebott-dev/blogapi"><button>Code</button></a>
           <a href=""><button>Demo</button></a>
         </div>
       </div>
@@ -196,7 +196,7 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <a href=""><button>Code</button></a>
+          <a href="https://github.com/davebott-dev/messaging_app"><button>Code</button></a>
           <a href=""><button>Demo</button></a>
         </div>
       </div>
@@ -207,7 +207,7 @@ function Projects() {
         </div>
         <div> The image will go here</div>
         <div>
-          <a href=""><button>Code</button></a>
+          <a href="https://github.com/davebott-dev/portfolio"><button>Code</button></a>
           <a href=""><button>Demo</button></a>
         </div>
       </div>
