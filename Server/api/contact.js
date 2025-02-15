@@ -1,13 +1,14 @@
 require("dotenv").config();
 const express = require('express');
-const {PrismaClient} = require('@prisma/client');
-const cors= require('cors');
-const nodemailer= require('nodemailer');
-const bodyParser= require('body-parser');
+const { PrismaClient } = require('@prisma/client');
+const cors = require('cors');
+const nodemailer = require('nodemailer');
+const path = require('path'); 
 
 const prisma = new PrismaClient();
-const app =express();
-const port = process.env.PORT ||3000;
+const app = express();
+const port = process.env.PORT || 3000;
+
 
 app.use(express.static(path.join(__dirname, 'build')));  
 app.get('/', (req, res) => {
@@ -15,25 +16,25 @@ app.get('/', (req, res) => {
 });
 
 app.use(cors({
-    origin: 'http://localhost:5173',
-    methods: ['GET','POST', 'PUT', 'DELETE'],
+    origin: ['http://localhost:5173', 'https://your-vercel-frontend-url.vercel.app'], // Update the origin for production
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
-    service:"gmail",
-    auth:{
+    service: "gmail",
+    auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASSWORD,
     }
 });
 
-app.post("/api/contact", async(req,res)=> {
-    const {name,email,message} = req.body;
+app.post("/api/contact", async (req, res) => {
+    const { name, email, message } = req.body;
 
-    try{
+    try {
         const sentMessage = await prisma.mail.create({
             data: {
                 name,
@@ -48,17 +49,20 @@ app.post("/api/contact", async(req,res)=> {
             subject: `Portfolio Contact Message: ${name}`,
             text: `You have received a message from ${name}, ${email}: \n\n ${message}`,
         });
+
         res.status(200).json({
-            success:true,
+            success: true,
             message: "Message sent successfully"
         });
-    } catch(err) {
+    } catch (err) {
         console.error("Error", err);
         res.status(500).json({
-            success:false,
+            success: false,
             error: "Failed to send message"
-        })
+        });
     }
-})
+});
 
-app.listen(port,()=>console.log(`The Server is Running on Port ${port}`));
+
+app.listen(port, () => console.log(`The Server is Running on Port ${port}`));
+
