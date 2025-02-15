@@ -30,6 +30,7 @@ function Contact() {
         body: JSON.stringify({ name, email, message }),
       });
       if (response.ok) {
+        
         const data = await response.json();
         console.log(data);
         if (data.success) {
