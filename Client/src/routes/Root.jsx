@@ -4,7 +4,7 @@ import {IconButton,CssBaseline} from '@mui/material';
 import{ThemeProvider, createTheme } from '@mui/material/styles';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import GitHubIcon from "@mui/icons-material/GitHub";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Root = () => {
     const [dark,setDark] = useState(false);
