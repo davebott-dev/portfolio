@@ -94,8 +94,7 @@ function Projects() {
             using React.
           </p>
         </div>
-        <div> The image will go here</div>
-        <div>
+        <div> <img src="./cv_gen.png" alt="" /></div>        <div>
           <a href="https://github.com/davebott-dev/react-cv-project">
             <button>Code</button>
           </a>
@@ -135,7 +134,7 @@ function Projects() {
             display messages on a messageboard.
           </p>
         </div>
-        <div> The image will go here</div>
+        <div> <img src="./message_board.png" alt="messageboard application" /></div>
         <div>
           <a href="https://github.com/davebott-dev/MiniMessageBoard"><button>Code</button></a>
           <a href="https://minimessageboard-bz9c.onrender.com/"><button>Demo</button></a>
@@ -150,7 +149,7 @@ function Projects() {
             the inventory.
           </p>
         </div>
-        <div> The image will go here</div>
+        <div> <img src="./inventoryapp.png" alt="pokemon inventory application" /></div>
         <div>
           <a href="https://github.com/davebott-dev/InventoryApp"><button>Code</button></a>
           <a href="https://inventory-app-liard-five.vercel.app/"><button>Demo</button></a>

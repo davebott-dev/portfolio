@@ -334,6 +334,7 @@ a {
   justify-content: center;
   height: auto;
   overflow: hidden;
+  max-width: 100%;
 }
 .project-card>div:nth-child(3){
   display: flex;
@@ -432,7 +433,6 @@ form button:hover{
 .about-container{
   padding: 15px;
 }
-
 @keyframes bounce {
   from{
     transform: translateY(0px);
