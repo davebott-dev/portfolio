@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MegaScroll from "react-mega-scroll";
 import { Tooltip } from "@mui/material";
 import { ReactTyped } from "react-typed";
-import GitHubIcon from "@mui/icons-material/Github";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
@@ -343,9 +343,5 @@ app.post("/contact", async(req, res)=> {
 
 export default Index;
 
-// change the resume button?
-//add text for experineces page
-//add coloring for the code blocks
-//deploy/update projects and add it to the demo page
-//deploy portfolio
+
 
