@@ -1,11 +1,20 @@
 require("dotenv").config();
-const { PrismaClient } = require('@prisma/client');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
+const { PrismaClient } = require("@prisma/client");
+const nodemailer = require("nodemailer");
+const cors = require("cors");
 
 const prisma = new PrismaClient();
 
 module.exports = async (req, res) => {
+    // Enable CORS for API requests
+    res.setHeader("Access-Control-Allow-Origin", "https://your-vercel-frontend-url.vercel.app");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+    if (req.method === "OPTIONS") {
+        return res.status(200).end();
+    }
+
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
@@ -13,12 +22,12 @@ module.exports = async (req, res) => {
     const { name, email, message } = req.body;
 
     try {
-        // Save to database
+        // Store message in the database
         const sentMessage = await prisma.mail.create({
             data: { name, email, message },
         });
 
-        // Send email
+        // Send email notification
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
