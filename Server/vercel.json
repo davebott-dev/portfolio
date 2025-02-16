@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "Client/package.json",
-      "use": "@vercel/react"
-    },
-    {
       "src": "Server/api/contact.js",
       "use": "@vercel/node"
     }
