@@ -1,39 +1,29 @@
 require("dotenv").config();
-const express = require('express');
 const { PrismaClient } = require('@prisma/client');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const path = require('path'); 
 
 const prisma = new PrismaClient();
-const app = express();
-const port = process.env.PORT || 3000;
 
-app.use(cors({
-    origin: ['http://localhost:5173', 'https://your-vercel-frontend-url.vercel.app'], // Update the origin for production
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
-}));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+module.exports = async (req, res) => {
+    if (req.method !== "POST") {
+        return res.status(405).json({ error: "Method Not Allowed" });
     }
-});
 
-app.post("/api/contact", async (req, res) => {
     const { name, email, message } = req.body;
 
     try {
+        // Save to database
         const sentMessage = await prisma.mail.create({
-            data: {
-                name,
-                email,
-                message,
+            data: { name, email, message },
+        });
+
+        // Send email
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASSWORD,
             },
         });
 
@@ -44,19 +34,11 @@ app.post("/api/contact", async (req, res) => {
             text: `You have received a message from ${name}, ${email}: \n\n ${message}`,
         });
 
-        res.status(200).json({
-            success: true,
-            message: "Message sent successfully"
-        });
+        return res.status(200).json({ success: true, message: "Message sent successfully" });
     } catch (err) {
         console.error("Error", err);
-        res.status(500).json({
-            success: false,
-            error: "Failed to send message"
-        });
+        return res.status(500).json({ success: false, error: "Failed to send message" });
     }
-});
+};
 
-
-app.listen(port, () => console.log(`The Server is Running on Port ${port}`));
 
