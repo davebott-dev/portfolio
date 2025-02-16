@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "server/api/contact.js",
+        "src": "Server/api/contact.js",
         "use": "@vercel/node"
       }
     ],
