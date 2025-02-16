@@ -5,6 +5,7 @@
         "src": "api/contact.js",
         "use": "@vercel/node"
       }
-    ]
+    ],
+    "rootDirectory": "Server"
   }
   
