@@ -22,7 +22,7 @@ function Contact() {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8080/contact", {
+      const response = await fetch("https://portfolio-db-sage.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,7 +30,7 @@ function Contact() {
         body: JSON.stringify({ name, email, message }),
       });
       if (response.ok) {
-        
+
         const data = await response.json();
         console.log(data);
         if (data.success) {
