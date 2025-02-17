@@ -1,6 +1,6 @@
 {
     "scripts": {
-      "build": "npx prisma generate",
+      "postinstall": "npx prisma generate",
       "start": "node api/contact.js"
     },  
   "dependencies": {
