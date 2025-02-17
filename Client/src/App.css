@@ -450,6 +450,58 @@ form button:hover{
   }
   
 }
+
+@media screen and (max-width:800px) {
+  #second {
+    display: flex;
+    flex-direction: column;
+  }
+  #second .card .slide {
+    width: 195px;
+    height: 200px;
+  }
+  .card {
+    height: 300px;
+  }
+  #second .card .icon .fa {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content h3 {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content p {
+    font-size: 0.75rem;
+  }
+  nav > div:nth-child(2) {
+    gap: 15px;
+  }
+}
+@media screen and (max-width:900px) {
+  #second {
+    display: flex;
+    flex-direction: column;
+  }
+  #second .card .slide {
+    width: 205px;
+    height: 200px;
+  }
+  .card {
+    height: 300px;
+  }
+  #second .card .icon .fa {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content h3 {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content p {
+    font-size: 0.75rem;
+  }
+  nav > div:nth-child(2) {
+    gap: 15px;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
