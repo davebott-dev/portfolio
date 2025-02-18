@@ -451,13 +451,13 @@ form button:hover{
   
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px) and (min-width:600px)  {
   #second {
     display: flex;
     flex-direction: column;
   }
   #second .card .slide {
-    width: 195px;
+    width: 180px;
     height: 200px;
   }
   .card {
@@ -474,15 +474,33 @@ form button:hover{
   }
   nav > div:nth-child(2) {
     gap: 15px;
+  }
+  #first > div:nth-child(2) {
+    max-width: 600px;
+    text-align: center;
+    font-size: 50px;
+  }
+  #third{
+    padding: 25px;
+  }
+  #third > div:first-child > h2, #third > div:nth-child(5) > h2 {
+    font-size: 2rem;
+  }
+  #third > div:first-child > p, #third > div:nth-child(5) > p {
+    font-size: 1rem;
+  }
+  #third > div:nth-child(2)>pre, #third > div:nth-child(4) >pre {
+    font-size: 0.7rem;
   }
 }
-@media screen and (max-width:900px) {
+
+@media screen and (max-width:900px) and (min-width:800px)  {
   #second {
     display: flex;
     flex-direction: column;
   }
   #second .card .slide {
-    width: 205px;
+    width: 190px;
     height: 200px;
   }
   .card {
@@ -499,6 +517,41 @@ form button:hover{
   }
   nav > div:nth-child(2) {
     gap: 15px;
+  }
+  #first > div:nth-child(2) {
+    max-width: 700px;
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width:1050px) and (min-width:900px)  {
+  #second {
+    display: flex;
+    flex-direction: column;
+  }
+  #second .card .slide {
+    width: 230px;
+    height: 200px;
+  }
+  .card {
+    height: 300px;
+  }
+  #second .card .icon .fa {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content h3 {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content p {
+    font-size: 0.75rem;
+  }
+  nav > div:nth-child(2) {
+    gap: 15px;
+  }
+  #first > div:nth-child(2) {
+    max-width: 700px;
+    text-align: center;
   }
 }
 
