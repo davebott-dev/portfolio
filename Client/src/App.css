@@ -523,6 +523,18 @@ form button:hover{
     text-align: center;
     font-size: 60px;
   }
+  #third{
+    padding: 25px;
+  }
+  #third > div:first-child > h2, #third > div:nth-child(5) > h2 {
+    font-size: 2.5rem;
+  }
+  #third > div:first-child > p, #third > div:nth-child(5) > p {
+    font-size: 1rem;
+  }
+  #third > div:nth-child(2)>pre, #third > div:nth-child(4) >pre {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width:1050px) and (min-width:900px)  {
@@ -531,7 +543,7 @@ form button:hover{
     flex-direction: column;
   }
   #second .card .slide {
-    width: 230px;
+    width: 220px;
     height: 200px;
   }
   .card {
@@ -552,6 +564,67 @@ form button:hover{
   #first > div:nth-child(2) {
     max-width: 700px;
     text-align: center;
+  }
+  #third{
+    padding: 25px;
+  }
+  #third > div:first-child > h2, #third > div:nth-child(5) > h2 {
+    font-size: 4rem;
+  }
+  #third > div:first-child > p, #third > div:nth-child(5) > p {
+    font-size: 1rem;
+  }
+  #third > div:nth-child(2)>pre, #third > div:nth-child(4) >pre {
+    font-size: 0.9rem;
+  }
+}
+
+/*make grid display 2x2
+make nav bar smaller or make it with icons instead?
+make third page much smaller
+center projects page
+make contact page a column */
+
+@media screen and (max-width:600px) and (min-width:400px)  {
+  #second {
+    display: flex;
+    flex-direction: column;
+  }
+  #second .card .slide {
+    width: 220px;
+    height: 200px;
+  }
+  .card {
+    height: 300px;
+  }
+  #second .card .icon .fa {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content h3 {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content p {
+    font-size: 0.75rem;
+  }
+  nav > div:nth-child(2) {
+    gap: 15px;
+  }
+  #first > div:nth-child(2) {
+    max-width: 500px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  #third{
+    padding: 25px;
+  }
+  #third > div:first-child > h2, #third > div:nth-child(5) > h2 {
+    font-size: 4rem;
+  }
+  #third > div:first-child > p, #third > div:nth-child(5) > p {
+    font-size: 1rem;
+  }
+  #third > div:nth-child(2)>pre, #third > div:nth-child(4) >pre {
+    font-size: 0.9rem;
   }
 }
 
