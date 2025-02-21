@@ -679,6 +679,134 @@ form button:hover{
   #contact-form>div:nth-child(2) {
     height: 90px;
   }
+}
+
+@media screen and (max-width:400px)  {
+  #second> div:nth-child(3) {
+    display: none;
+  }
+  .scroll-container>h2, #second>div:first-child>h2 {
+    font-size: large;
+    margin:0;
+  }
+  .scroll-container>h2 {
+    margin-bottom: 25px;
+  }
+  .carousel-secondary img{
+    height: 50px;
+  }
+  .carousel-primary img{
+    margin-bottom: 42px;
+    height: 50px;
+  }
+  #second {
+    display: flex;
+    flex-direction: column;
+  }
+  #second > div:first-child > div:nth-child(2){
+    position: relative;
+    z-index: 2;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 0 10px 0 10px;
+  }
+  #second .card .slide {
+    width: 190px;
+    height: 200px;
+  }
+   .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  #second .card .icon .fa {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content h3 {
+    font-size: 20px;
+  }
+  #second .card .slide.slide2 .content p {
+    font-size: 0.75rem;
+  }
+  nav div {
+    font-size: 1rem;
+  }
+  nav{
+    padding: 15px;
+  }
+  nav>div:nth-child(2) {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #first > div:nth-child(2) {
+    max-width: 500px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  #third {
+    padding: 20px;
+  }
+  #third > div:first-child > h2, #third > div:nth-child(5) > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  #third > div:first-child > p, #third > div:nth-child(5) > p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;  /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Code Styling */
+  pre {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+  
+  code {
+    display: block;
+    white-space: pre-wrap;
+    wo
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0;
+  }
+  .scroll {
+    padding-bottom: 100px;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #contact-form>div:nth-child(2) {
+    visibility: hidden;
+  }
 
 }
 
