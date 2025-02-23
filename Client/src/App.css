@@ -747,23 +747,30 @@ form button:hover{
     font-size: 2.5rem;
   }
   #third {
-    padding: 20px;
+    padding: 0 20px 0;
+    display: flex;
+    flex-direction: column;
   }
-  #third > div:first-child > h2, #third > div:nth-child(5) > h2 {
+  #third > div:first-child > h2 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 5px;
   }
-  
-  #third > div:first-child > p, #third > div:nth-child(5) > p {
+  #third > div:nth-child(4) {
+    display: none;
+  }
+  #third > div:first-child > p {
     font-size: 1rem;
     text-align: center;
   }
+  #third > div:nth-child(5){
+    display: none;
+  }
+ 
   
-  /* Button Styling */
   button {
     padding: 10px 20px;
-    background-color: #4CAF50;  /* Green button color */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -776,21 +783,22 @@ form button:hover{
     background-color: #45a049;
   }
   
-  /* Code Styling */
   pre {
     background-color: #2e2e2e;
     color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     overflow-x: auto;
     font-size: 1rem;
-    margin: 20px 0;
+  }
+  hr{
+    display: none;
   }
   
   code {
     display: block;
     white-space: pre-wrap;
-    wo
+  }
   .project-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 0;
